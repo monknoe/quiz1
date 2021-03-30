@@ -1,28 +1,13 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<meta charset=utf-8>
 <html> 
 <head>   
-      <title>My Document</title>   
-        <script type="text/javascript"> 
-
-            function change() {
-            var header = document.getElementById("hid123");     
-            header.innerHTML = "CSIE@CGU";     
-            var para = document.getElementById("pid123");     
-            para.innerHTML = "怎麼那麼棒！！.";   }   
-
-            function myfuction(){
-                var btn = document.createElement("BUTTON");  
-                btn.innerHTML = "Change this document";
-                document.body.appendChild(btn).addEventListener("click", change);
-            }
-
-        </script>
+      <title>My Document</title>
+      <script src="quiz1.js"></script>  
   </head> 
 
   <body>   
-    
-    <button onclick="myfuction()">Try it</button>
+    <button onclick="myFunction()">Try it</button>    
     <h1 id="hid123">CGU</h1>   
     <p id="pid123">好棒棒</p> 
   </body> 
