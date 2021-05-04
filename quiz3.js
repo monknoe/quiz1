@@ -6,6 +6,11 @@ data.done( function( msg ) {
     $("#contain").append($("<h2/>").text(item.A_Name_Ch));            
     $("#contain").append($("<h3/>").text(item.A_Behavior));  
     $("#contain").append($("<img/>").attr("src", item.A_Pic01_URL));
-    if (item.mediaMeta) {     
-      $("#contain").append($("<img/>").attr("src", item.mediaMeta[0].url));}   
-  }); });
+    // if (item.mediaMeta) {     
+    //   $("#contain").append($("<img/>").attr("src", item.mediaMeta[0].url));}   
+  }); 
+});
+data.fail(function(msg){
+  console.log(msg);
+  $("#contain").html("fail getting data")
+});
